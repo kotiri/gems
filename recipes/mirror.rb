@@ -49,4 +49,4 @@ template "#{node['apache']['dir']}/sites-available/rubyforge_mirror.conf" do
   mode 0755
 end
 
-apache_site "rubyforge_mirror.conf"
+apache2_site "rubyforge_mirror.conf"

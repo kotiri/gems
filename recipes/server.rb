@@ -34,7 +34,7 @@ template "#{node['apache']['dir']}/sites-available/gem_server.conf" do
   mode 0755
 end
 
-apache_site "gem_server.conf"
+apache2_site "gem_server.conf"
 
 execute "index-gem-repository" do
   command "gem generate_index -d #{node['gem_server']['directory']}"
